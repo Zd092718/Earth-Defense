@@ -6,17 +6,18 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField] GameObject deathVFX;
     [SerializeField] GameObject hitVFX;
-    [SerializeField] Transform parent;
     [SerializeField] int scorePerKill = 10;
     [SerializeField] int scorePerHit = 4;
 
     [SerializeField]int enemyHp = 6;
 
     Scoreboard scoreboard;
+    GameObject parentGameObject;
 
     void Start()
     {
         scoreboard = FindObjectOfType<Scoreboard>();
+        parentGameObject = GameObject.FindWithTag("Spawner");
         AddRigidbody();
     }
 
@@ -41,14 +42,14 @@ public class Enemy : MonoBehaviour
         enemyHp--;
         scoreboard.IncreaseScore(scorePerHit);
         GameObject hit = Instantiate(hitVFX, transform.position, Quaternion.identity);
-        hit.transform.parent = parent;
+        hit.transform.parent = parentGameObject.transform;
     }
     void KillEnemy()
     {
         scoreboard.IncreaseScore(scorePerKill);
         Destroy(this.gameObject);
         GameObject vfx = Instantiate(deathVFX, transform.position, Quaternion.identity);
-        vfx.transform.parent = parent;
+        vfx.transform.parent = parentGameObject.transform;
     }
 
 }
