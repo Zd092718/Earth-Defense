@@ -717,6 +717,7 @@ GameObject:
   - component: {fileID: 5993660601073306756}
   - component: {fileID: 8415316505338214478}
   - component: {fileID: 8636093975851857943}
+  - component: {fileID: 6887250456809270370}
   m_Layer: 0
   m_Name: Brute
   m_TagString: Untagged
@@ -804,4 +805,17 @@ MonoBehaviour:
   hitVFX: {fileID: 7763331986020969008, guid: 69f637f50dfd031488cb473b54bcf855, type: 3}
   scorePerKill: 25
   scorePerHit: 15
-  enemyHp: 5
+  enemyHp: 8
+--- !u!65 &6887250456809270370
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8055191193317136795}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.147294, y: 3.2459185, z: 10.599532}
+  m_Center: {x: 0, y: 0, z: 0}

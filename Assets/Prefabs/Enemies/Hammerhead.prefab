@@ -188,6 +188,7 @@ GameObject:
   - component: {fileID: 2404441090862905725}
   - component: {fileID: 2413781371086382295}
   - component: {fileID: 7051749064553580103}
+  - component: {fileID: -2987256651808163152}
   m_Layer: 0
   m_Name: Hammerhead
   m_TagString: Untagged
@@ -275,7 +276,20 @@ MonoBehaviour:
   hitVFX: {fileID: 7763331986020969008, guid: 69f637f50dfd031488cb473b54bcf855, type: 3}
   scorePerKill: 50
   scorePerHit: 10
-  enemyHp: 8
+  enemyHp: 10
+--- !u!65 &-2987256651808163152
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2390573026100623587}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.60827, y: 1.7607899, z: 12.307949}
+  m_Center: {x: 0, y: -0.00001564622, z: 0}
 --- !u!1 &2476953281057504005
 GameObject:
   m_ObjectHideFlags: 0

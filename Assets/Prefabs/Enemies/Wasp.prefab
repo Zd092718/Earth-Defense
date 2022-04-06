@@ -103,6 +103,7 @@ GameObject:
   - component: {fileID: 3105361843355860315}
   - component: {fileID: 935765128515144081}
   - component: {fileID: 7525463689501980290}
+  - component: {fileID: 5258985469926719490}
   m_Layer: 0
   m_Name: Wasp
   m_TagString: Untagged
@@ -191,6 +192,19 @@ MonoBehaviour:
   scorePerKill: 10
   scorePerHit: 5
   enemyHp: 2
+--- !u!65 &5258985469926719490
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1728393920929884228}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8.859269, y: 2.4964607, z: 10.716054}
+  m_Center: {x: 0.00000023841856, y: -0.0000010132788, z: 0}
 --- !u!1 &1752285567025898258
 GameObject:
   m_ObjectHideFlags: 0

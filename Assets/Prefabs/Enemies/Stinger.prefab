@@ -452,6 +452,7 @@ GameObject:
   - component: {fileID: 8828945006632049246}
   - component: {fileID: 6729013349332545172}
   - component: {fileID: 8949358417138118580}
+  - component: {fileID: -4597357755745336046}
   m_Layer: 0
   m_Name: Stinger
   m_TagString: Untagged
@@ -537,10 +538,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 3736117989756553020, guid: ea9c53e3532ea1b4784a722d6e25d8e8, type: 3}
   hitVFX: {fileID: 7763331986020969008, guid: 69f637f50dfd031488cb473b54bcf855, type: 3}
-  parent: {fileID: 0}
   scorePerKill: 8
   scorePerHit: 4
   enemyHp: 2
+--- !u!65 &-4597357755745336046
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5071824545564610369}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8.064258, y: 5.8733153, z: 15.652345}
+  m_Center: {x: 0, y: 0.00000023841858, z: 0}
 --- !u!1 &5511676994981473207
 GameObject:
   m_ObjectHideFlags: 0
