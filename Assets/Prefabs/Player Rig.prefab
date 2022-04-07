@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7349591583906029330}
   - component: {fileID: 7349591583906029333}
   - component: {fileID: 7349591583906029332}
+  - component: {fileID: 487288754}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -83,6 +84,66 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7349591583906029335}
   m_Enabled: 1
+--- !u!114 &487288754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7349591583906029335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeTrigger: {fileID: 7349591583906029330}
+  volumeLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  stopNaNPropagation: 1
+  finalBlitToCameraTarget: 0
+  antialiasingMode: 1
+  temporalAntialiasing:
+    jitterSpread: 0.75
+    sharpness: 0.25
+    stationaryBlending: 0.95
+    motionBlending: 0.85
+  subpixelMorphologicalAntialiasing:
+    quality: 2
+  fastApproximateAntialiasing:
+    fastMode: 0
+    keepAlpha: 0
+  fog:
+    enabled: 1
+    excludeSkybox: 1
+  debugLayer:
+    lightMeter:
+      width: 512
+      height: 256
+      showCurves: 1
+    histogram:
+      width: 512
+      height: 256
+      channel: 3
+    waveform:
+      exposure: 0.12
+      height: 256
+    vectorscope:
+      size: 256
+      exposure: 0.12
+    overlaySettings:
+      linearDepth: 0
+      motionColorIntensity: 4
+      motionGridSize: 64
+      colorBlindnessType: 0
+      colorBlindnessStrength: 1
+  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
+  m_ShowToolkit: 0
+  m_ShowCustomSorter: 0
+  breakBeforeColorGrading: 0
+  m_BeforeTransparentBundles: []
+  m_BeforeStackBundles: []
+  m_AfterStackBundles: []
 --- !u!1 &7349591584938561025
 GameObject:
   m_ObjectHideFlags: 0
@@ -190,14 +251,48 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Ship
       objectReference: {fileID: 0}
+    - target: {fileID: 2743122404595758245, guid: 60dc6a2d40ef19744b2e443d98647fce, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2743843847717163553, guid: 60dc6a2d40ef19744b2e443d98647fce, type: 3}
+      propertyPath: lasers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2743843847717163553, guid: 60dc6a2d40ef19744b2e443d98647fce, type: 3}
+      propertyPath: lasers.Array.data[0]
+      value: 
+      objectReference: {fileID: 6656987504263087565}
+    - target: {fileID: 2743843847717163553, guid: 60dc6a2d40ef19744b2e443d98647fce, type: 3}
+      propertyPath: lasers.Array.data[1]
+      value: 
+      objectReference: {fileID: 1895776132697341436}
     - target: {fileID: 3811085424786710666, guid: 60dc6a2d40ef19744b2e443d98647fce, type: 3}
       propertyPath: playOnAwake
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4408032834685724266, guid: 60dc6a2d40ef19744b2e443d98647fce, type: 3}
+      propertyPath: m_Constraints
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4408032834685724266, guid: 60dc6a2d40ef19744b2e443d98647fce, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60dc6a2d40ef19744b2e443d98647fce, type: 3}
 --- !u!4 &7345285098447717690 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2739692752660087923, guid: 60dc6a2d40ef19744b2e443d98647fce, type: 3}
+  m_PrefabInstance: {fileID: 4893981137647829321}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6656987504263087565 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2272267459516351620, guid: 60dc6a2d40ef19744b2e443d98647fce, type: 3}
+  m_PrefabInstance: {fileID: 4893981137647829321}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1895776132697341436 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6459797610350820533, guid: 60dc6a2d40ef19744b2e443d98647fce, type: 3}
   m_PrefabInstance: {fileID: 4893981137647829321}
   m_PrefabAsset: {fileID: 0}
